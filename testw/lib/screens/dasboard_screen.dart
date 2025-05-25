@@ -31,6 +31,22 @@ class DashboardScreen extends StatelessWidget {
             },
             icon: Icons.home,
             label: 'Challenge-6 App'
+          ),
+          SidebarXItem(
+            onTap:() { 
+              Navigator.pop(context);
+              Navigator.pushNamed(context,'/api');
+            },
+            icon: Icons.home,
+            label: 'Popular-Movies-App'
+          ),
+                    SidebarXItem(
+            onTap:() { 
+              Navigator.pop(context);
+              Navigator.pushNamed(context,'/counter');
+            },
+            icon: Icons.home,
+            label: 'Prac-Contador'
           )
         ],
       ),
